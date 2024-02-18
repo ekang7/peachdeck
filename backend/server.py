@@ -59,7 +59,7 @@ def create_video(pptx_file, audio_files, output_video):
 def delete_images():
     directory = os.getcwd()
     for filename in os.listdir(directory):
-        if filename.endswith(".png") or filename.endswith(".jpg"): # Specify the file extensions you want to delete
+        if filename.endswith(".png") or filename.endswith(".jpg") or filename.endswith(".pptx"): # Specify the file extensions you want to delete
             filepath = os.path.join(directory, filename)
             os.remove(filepath)
 
