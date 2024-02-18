@@ -1,0 +1,71 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+body {
+    color: black
+}
+
+.topic {
+    text-align: center;
+    width: 1129px;
+    height: 600px;
+    top: 110px;
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.upload {
+    left: 0px;
+}
+
+.once {
+    left: 0px;
+}
+
+.fileUpload {
+    background-color: #f7f7f7;
+    width: 800px;
+    height: 300px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+.cloud {
+    width: 68.95px;
+    height: 68.95px;
+    display: inline-block;
+    vertical-align: middle; /* This will vertically center the icon */
+    position: relative; /* Relative positioning to move it slightly upwards */
+    top: -10px; /* Adjust this value to move the icon up by the desired amount */
+}
+.topic {
+    background-color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusts the spacing around items */
+}
+.a1::before, .a2::before, .a3::before, .a4::before {
+    content: url('src/components/Vector.png'); /* Replace 'path/to/your/image.png' with the actual path to your image */
+    margin-right: 10px; /* Adjusts the space between the image and the text */
+    margin-left: 10px;
+    vertical-align: middle; /* Adjusts the alignment of the image relative to the text */
+  }

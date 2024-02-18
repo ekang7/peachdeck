@@ -5,6 +5,31 @@
   text-align: center;
 }
 
+body {
+  background: linear-gradient(to bottom, #b8aede 0%, #89cff0 100%);
+}
+
+
+.app-logo {
+  position: absolute;
+  width: 206px;
+  height: 70.93px;
+  top: 0px;
+  left: 60px;
+  padding: 1.47px;
+  gap: 6.88px;
+  color: black;
+}
+
+.logoimage {
+  width: 40px;
+  height: 40px;
+  top: 45px;
+  left: 10px;
+  position: absolute;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -17,6 +42,7 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
 
 @keyframes logo-spin {
   from {

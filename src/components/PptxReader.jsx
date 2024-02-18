@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import JSZip from 'jszip'; // Import JSZip library
 import axios from 'axios';
+import './PptxReader.css'; 
 
 const PptxReader = () => {
   const [file, setFile] = useState(null);
@@ -86,11 +87,22 @@ const PptxReader = () => {
     };
     reader.readAsArrayBuffer(file);
   };
-  
+
+
   return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleFileUpload}>Upload and Read PPTX</button>
+    <div className = "topic">
+      <h1 className="upload">Upload a Powerpoint</h1>
+      <p className="once">Once you upload, our AI will turn your slides into a video presentation.</p>
+      <div className = "fileUpload">
+        <img className ="cloud" src="src/components/Cloud.png"></img>
+        <input type="file" onChange={handleFileChange} />
+      </div>
+      <div class="container">
+        <p class="a1">Help students catch up</p>
+        <p class="a2">Create online courses</p>
+        <p class="a3">Create training videos</p>
+        <p class="a4">Done within 1 min</p>
+      </div>
     </div>
   );
 };
